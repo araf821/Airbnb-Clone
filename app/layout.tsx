@@ -1,4 +1,5 @@
 import { Nunito } from "next/font/google";
+import Modal from "./components/modals/Modal";
 import Navbar from "./components/navbar/Navbar";
 
 import "./globals.css";
@@ -20,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={nunito.className}>
+        <Modal isOpen title="asdf" />
         <Navbar />
         {children}
       </body>
