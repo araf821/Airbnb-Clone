@@ -58,7 +58,7 @@ const RentModal = () => {
   const guestCount = watch("guestCount");
   const roomCount = watch("roomCount");
   const bathroomCount = watch("bathroomCount");
-  const imageSrc = watch("imageSrc");
+  const imgSrc = watch("imgSrc");
 
   const Map = useMemo(
     () =>
@@ -201,8 +201,8 @@ const RentModal = () => {
         />
 
         <ImageUpload
-          value={imageSrc}
-          onChange={(value) => setCustomValue("imageSrc", value)}
+          value={imgSrc}
+          onChange={(value) => setCustomValue("imgSrc", value)}
         />
       </div>
     );
