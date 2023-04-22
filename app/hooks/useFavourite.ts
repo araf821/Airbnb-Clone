@@ -18,7 +18,7 @@ const useFavourite = ({ listingId, currentUser }: useFavouriteProps) => {
   const previouslyFavourite = useMemo(() => {
     const favouriteIds = currentUser?.favouriteIds || [];
 
-    return listingId.includes(listingId);
+    return favouriteIds.includes(listingId);
   }, [currentUser, listingId]);
 
   const toggleFavourite = useCallback(
@@ -45,7 +45,13 @@ const useFavourite = ({ listingId, currentUser }: useFavouriteProps) => {
         toast.error("Something went wrong.");
       }
     },
-    [ ]
+    [currentUser, previouslyFavourite, listingId, loginModal, router]
   );
+
+  return {
+    previouslyFavourite,
+    toggleFavourite,
+  };
 };
+
 export default useFavourite;
