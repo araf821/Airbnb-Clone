@@ -1,5 +1,3 @@
-"use client";
-
 import getCurrentUser from "../actions/getCurrentUser";
 import getReservations from "../actions/getReservations";
 import EmptyState from "../components/EmptyState";
