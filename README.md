@@ -10,6 +10,8 @@ Check out the completed project [here](https://airbee-enbee.vercel.app/)!
 
 > Prisma and MongoDB for our Data
 
+> Cloudinary for storing Images
+
 ---
 
 This is a complete CRUD app features including:
